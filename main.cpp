@@ -31,6 +31,15 @@ int main() {
     Vetur parking[MAX];
     int n = 0;
     int zgjedhja;
-    
+    do { 
+        cout << "\n=== MENAXHIMI I PARKIMIT ===\n";
+        cout << "1. Regjistro veture\n";
+        cout << "2. Shfaq veturat\n";
+        cout << "3. Llogarit pagesen\n";
+        cout << "4. Kerko veture\n";
+        cout << "0. Dalje\n";
+        cout << "Zgjedhja: ";
+        cin >> zgjedhja;   
+    } while (zgjedhja != 0);
     return 0;
 }
