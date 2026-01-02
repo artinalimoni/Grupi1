@@ -10,7 +10,9 @@ struct Vetur {
     int ore;
 };
 int main() {   
-
+    Vetur parking[MAX];
+    int n = 0;
+    int zgjedhja;
     
     return 0;
 }
