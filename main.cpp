@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+using namespace std;
 const int MAX = 100;
 const float CMIMI_PER_ORE = 1.5;
 
@@ -90,7 +91,27 @@ int main() {
         cout << "4. Kerko veture\n";
         cout << "0. Dalje\n";
         cout << "Zgjedhja: ";
-        cin >> zgjedhja;   
+        cin >> zgjedhja;  
+        
+        switch (zgjedhja) {
+            case 1:
+                shtoVeture(parking, n);
+                break;
+            case 2:
+                shfaqVeturat(parking, n);
+                break;
+            case 3:
+                llogaritPagesen(parking, n);
+                break;
+            case 4:
+                kerkoVeture(parking, n);
+                break;
+            case 0:
+                cout << "Programi u mbyll.\n";
+                break;
+            default:
+                cout << "Zgjedhje e pavlefshme!\n";
+        }
     } while (zgjedhja != 0);
     return 0;
 }
