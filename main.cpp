@@ -26,6 +26,7 @@ void shtoVeture(Vetur v[], int &n) {
     n++;
     cout << "Vetura u regjistrua me sukses.\n";
 }
+
 // Shfaq veturat në parking
 void shfaqVeturat(Vetur v[], int n) {
     if (n == 0) {
@@ -40,6 +41,7 @@ void shfaqVeturat(Vetur v[], int n) {
              << ", Ore: " << v[i].ore << endl;
     }
 }
+
 // Llogarit pagesën
 void llogaritPagesen(Vetur v[], int n) {
     string targa;
@@ -57,6 +59,25 @@ void llogaritPagesen(Vetur v[], int n) {
 
     cout << "Vetura nuk u gjet.\n";
 }
+
+// Kërko veturë sipas targës
+void kerkoVeture(Vetur v[], int n) {
+    string targa;
+    cout << "Shkruaj targen: ";
+    cin >> targa;
+
+    for (int i = 0; i < n; i++) {
+        if (v[i].targa == targa) {
+            cout << "Vetura u gjet:\n";
+            cout << "Modeli: " << v[i].modeli
+                 << ", Ore: " << v[i].ore << endl;
+            return;
+        }
+    }
+
+    cout << "Vetura nuk u gjet.\n";
+}
+
 int main() {   
     Vetur parking[MAX];
     int n = 0;
