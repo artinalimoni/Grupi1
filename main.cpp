@@ -40,7 +40,23 @@ void shfaqVeturat(Vetur v[], int n) {
              << ", Ore: " << v[i].ore << endl;
     }
 }
+// Llogarit pagesën
+void llogaritPagesen(Vetur v[], int n) {
+    string targa;
+    cout << "Shkruaj targen: ";
+    cin >> targa;
 
+    for (int i = 0; i < n; i++) {
+        if (v[i].targa == targa) {
+            float pagesa = v[i].ore * CMIMI_PER_ORE;
+            cout << "Pagesa per veturen " << targa
+                 << " eshte: " << pagesa << " EUR\n";
+            return;
+        }
+    }
+
+    cout << "Vetura nuk u gjet.\n";
+}
 int main() {   
     Vetur parking[MAX];
     int n = 0;
