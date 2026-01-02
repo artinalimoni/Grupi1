@@ -26,6 +26,20 @@ void shtoVeture(Vetur v[], int &n) {
     n++;
     cout << "Vetura u regjistrua me sukses.\n";
 }
+// Shfaq veturat në parking
+void shfaqVeturat(Vetur v[], int n) {
+    if (n == 0) {
+        cout << "Nuk ka vetura ne parking.\n";
+        return;
+    }
+
+    cout << "\n--- Veturat ne Parking ---\n";
+    for (int i = 0; i < n; i++) {
+        cout << "Targa: " << v[i].targa
+             << ", Modeli: " << v[i].modeli
+             << ", Ore: " << v[i].ore << endl;
+    }
+}
 
 int main() {   
     Vetur parking[MAX];
