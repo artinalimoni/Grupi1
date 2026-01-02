@@ -80,3 +80,47 @@ void kerkoVeturen() {
 
     cout << "Vetura nuk u gjet.\n";
 }
+
+//Funksioni i menusë
+void menu() {
+    cout << "\n--- SISTEMI I MENAXHIMIT TË PARKIMIT ---\n";
+    cout << "1. Regjistro veturë\n";
+    cout << "2. Shfaq veturat e parkuara\n";
+    cout << "3. Llogarit pagesën e parkimit\n";
+    cout << "4. Kërko veturë sipas targës\n";
+    cout << "0. Dalje\n";
+    cout << "Zgjedhja juaj: ";
+}
+
+int main() {
+    int zgjedhja;
+
+    do {
+        menu();
+        cin >> zgjedhja;
+
+        switch (zgjedhja) {
+            case 1:
+                regjistroVeturen();
+                break;
+            case 2:
+                shfaqVeturat();
+                break;
+            case 3:
+                llogaritPagesen();
+                break;
+            case 4:
+                kerkoVeturen();
+                break;
+            case 0:
+                cout << "Programi u mbyll.\n";
+                break;
+            default:
+                cout << "Zgjedhje e pavlefshme.\n";
+        }
+
+    } while (zgjedhja != 0);
+
+    return 0;
+}
+    
