@@ -42,7 +42,16 @@ g++ main.cpp -o parking
 ```bash
 ./parking
 ```
-
+## Shembull i Ekzekutimit
+```
+--- SISTEMI I MENAXHIMIT TË PARKIMIT ---
+1. Regjistro veturë
+2. Shfaq veturat e parkuara
+3. Llogarit pagesën e parkimit
+4. Kërko veturë sipas targës
+0. Dalje
+Zgjedhja juaj:
+```
 
 ## Struktura e Projektit
 parking-management-system/
