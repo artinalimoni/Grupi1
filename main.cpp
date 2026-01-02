@@ -9,6 +9,24 @@ struct Vetur {
     string modeli;
     int ore;
 };
+// Shto veturë në parking
+void shtoVeture(Vetur v[], int &n) {
+    if (n >= MAX) {
+        cout << "Parking i mbushur!\n";
+        return;
+    }
+
+    cout << "Targa: ";
+    cin >> v[n].targa;
+    cout << "Modeli: ";
+    cin >> v[n].modeli;
+    cout << "Oret e parkimit: ";
+    cin >> v[n].ore;
+
+    n++;
+    cout << "Vetura u regjistrua me sukses.\n";
+}
+
 int main() {   
     Vetur parking[MAX];
     int n = 0;
