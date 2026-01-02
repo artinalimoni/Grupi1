@@ -65,3 +65,13 @@ parking-management-system/
 - Ndryshimet janë integruar në branch-in kryesor (`main`) përmes Pull Requests
 
 
+## Authors
+
+- [@arlind5](https://github.com/arlind5)
+- [@artinalimoni](https://github.com/artinalimoni)
+- [@artinlimoni93](https://github.com/artinlimoni93)
+- [@artiahmeti](https://github.com/artiahmeti)
+
+
+
+
