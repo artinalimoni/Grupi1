@@ -49,7 +49,7 @@ g++ main.cpp -o parking
 2. Shfaq veturat e parkuara
 3. Llogarit pagesën e parkimit
 4. Kërko veturë sipas targës
-0. Dalje
+0. Dalje nga parkingu
 Zgjedhja juaj:
 ```
 
